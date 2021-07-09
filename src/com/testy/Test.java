@@ -20,7 +20,7 @@ public class Test {
     static int[][] array3 = {{0,1},{11,12}};
 
     public static void main(String[] args) {
-        System.out.println('b'+0 );
+        System.out.println('b'+1);
 
         System.out.println("***********" + array3[0][1]);
        // checkMemort();
@@ -28,7 +28,7 @@ public class Test {
 
 
 
-        for ( int a[][]: array ) {
+        for ( int[][] a : array ) {
             for (int[] b: a ){
                 System.out.println();
                 for (int c : b){
@@ -48,7 +48,8 @@ public class Test {
 
     static void checkMemort(){
         List s1 = new ArrayList( );
-        try{  while(true){  s1.add("sdfa");  }
+        try{  while(true){
+            s1.add("sdfa");  }
         }catch(RuntimeException e){  e.printStackTrace();   }
         System.out.println(s1.size());
     }
