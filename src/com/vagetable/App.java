@@ -13,6 +13,8 @@ public class App {
 
         v.chop();
         carrot.chop();
+
+        System.out.println("True " + true + null + false);
     }
 
 
