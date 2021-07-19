@@ -2,10 +2,10 @@ package com.lambda;
 
 public class Data {
 
-    int value;
+     final int value = 11;
 
     public Data(int x){
-        this.value = x;
+
     }
 
     @Override

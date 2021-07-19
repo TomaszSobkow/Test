@@ -12,7 +12,8 @@ public class Director extends Manager{
     }
 
     public static void findBonus(List<Employee> employees, Predicate<Employee> bonus){
-        employees.forEach(b -> { if( b instanceof Director )
+        employees.forEach(b -> { if( b instanceof Director
+        )
                                     {    bonus.test( b);
                                          System.out.println(b.print());}});}
 

@@ -10,21 +10,24 @@ public class Game {
 
     public static void main(String[] args) {
 
-        Team flash = new Player("Tom",23,"Flash");
-        Team bum = new Player("John",43,"bum");
+        listOfTeams.add(new Player("Tom",23,"Flash"));
+        listOfTeams.add(new Player("John",43,"bum"));
+        listOfTeams.add(new Player("Aga",39,"Flash"));
 
-        listOfTeams.add(flash);
-        listOfTeams.add(bum);
-
-        findTeam(listOfTeams,l -> l.getTeam().equals("Flash"));
+        findTeamMembers(listOfTeams,l -> l.getTeam().equals("bum"));
 
 
     }
 
-      public static void findTeam(List<Team> teams, Predicate<Team> teamMembers){
+      public static void findTeamMembers(List<Team> teams, Predicate<Team> teamMembers){
         teams.forEach(a -> {
-                            if(teamMembers.test(a))
-                                System.out.println("Team: "+a.getTeam()); });
+                                if(teamMembers.test(a)){
+                                    System.out.println("Team: "+a.getTeam());
+                                    System.out.println("Name: "+((Player)a).getName()+
+                                            "\nPoints: " + ((Player)a).getPoints());
+                                    }
+                                }
+                            );
       }
 
       public static void findPlayer(List<Player> players, Predicate<Team> findPlayer){

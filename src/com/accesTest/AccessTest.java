@@ -11,6 +11,15 @@ public class AccessTest {
     static char b = 'x';
     String c = "x";
 
+    public static void main(String[] args) {
+        String mes = "message";
+        System.out.println(mes.hashCode());
+
+         mes = mes+" ";
+
+        System.out.println(mes.hashCode());
+    }
+
     class Inner{
         String a = "y";
         String get(){
@@ -21,6 +30,8 @@ public class AccessTest {
             System.out.println(b);
         return c;
         }
+
     }
+
 }
 

@@ -24,8 +24,8 @@ public class App {
             employeesList.add(director);
             employeesList.add(director1);
 
-            findSalary(employeesList, a -> a.getSalary()>120);
-            //Director.findBonus(employeesList, a->((Director)a).getBonus() >10);
+            //findSalary(employeesList, a -> a.getSalary()>120);
+           Director.findBonus(employeesList, a->((Director)a).getBonus() >10);
 
         }
 

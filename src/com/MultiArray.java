@@ -1,13 +1,22 @@
 package com;
 
-public class MuktiArray {
+public class MultiArray {
 
 
 
 
     public static void main(String[] args) {
 
-        testloop();
+        int[][] justArray = {{1,1,1,1,1}, {2,2,2,2,2,2,2,2,2}, {3,3,3,3,3,3,3}, {11,11,11,11,11,11,11,11,11}, {8,8,8,8,8,8,8}};
+        //System.out.println(justArray.length);
+
+        String b = "hello";
+
+        String bb = "hello";
+        System.out.println(b.hashCode()+"---"+bb.hashCode());
+
+        System.out.println(b.compareTo(bb) == 0 );
+        //testloop();
 
         short d = 12;
         int w = 12;
@@ -18,7 +27,7 @@ public class MuktiArray {
         Float f=11.0f;
         Double dou = 13d;
 
-        System.out.println( dou == w);
+        //System.out.println( dou == w);
 
 
 //        int value = 0;
@@ -48,7 +57,8 @@ public class MuktiArray {
     }
 
     static void testloop2(){
-        for (int i =1; i<2;++i) System.out.println("\ntestloop "+i);
+        for (int i =1; i<2;++i)
+                System.out.println("\ntestloop "+i);
     }
 
 }
